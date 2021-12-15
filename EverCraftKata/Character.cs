@@ -1,9 +1,4 @@
 ﻿using EverCraftKata.Enum;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EverCraftKata
 {
@@ -14,10 +9,8 @@ namespace EverCraftKata
         public string Name { get; set; }
         public EnumAlignment Alignment { get; set; }
 
-        public int ArmorClass
-        {
-            get { return 10; }
-        }
+        public int ArmorClass => 10;
+
         public int HitPoints
         {
             get { return this._hitPoints; }
@@ -51,10 +44,7 @@ namespace EverCraftKata
             HitPoints--;
         }
 
-        public bool IsAlive()
-        {
-            return HitPoints > 0;
-        }
+        public bool IsAlive()  => HitPoints > 0;
 
     }
 
